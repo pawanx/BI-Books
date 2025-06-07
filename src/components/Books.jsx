@@ -1,7 +1,7 @@
 import useFetch from "../useFetch"
 import { useState } from "react";
 const Books = () => {
-    const {data, loading, error} = useFetch("http://localhost:3000/books");
+    const {data, loading, error} = useFetch("https://be-4-assignement1.vercel.app/books/");
      const [successMessage, setSuccessMessege] = useState("");
     if(loading) return <p>Loading...</p>;
     if(error) return <p>An error occured {error.message}</p>;
